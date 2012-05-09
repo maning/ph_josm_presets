@@ -10,11 +10,28 @@
 <!--
 
 -->
-<group name="PH shops">
+
+<group name="PH Auto/Transport Services">
+
   <item name="Vulcanizing" type="node,way">
     <label text="Vulcanizing shops" />
-    <text key="name" text="(e.g. M3)" />
-    <combo key="shop" text="Type" values="vulcanizing,car_repair" />
+    <text key="name" text="Name (e.g. Mang Tonyo's Vulcanizing)" />
+    <combo key="shop" text="shop" values="vulcanizing,car_repair" />
   </item>
+
+  <item name="Transport Stations/Terminals" type="node,way">
+    <label text="Transport Stations/Terminals" />
+    <text key="name" text="Name (e.g. Cubao-Calumpang)" />
+    <combo key="amenity" text="amenity" values="jeepney_station,fx_station,tricycle_station" />
+  </item>
+
+  <item name="Auto supply (not car repair)" type="node,way">
+    <label text="Auto supply (not car repair)" />
+    <text key="name" text="Name (e.g. Mang Tonyo's Vulcanizing)" />
+    <key key="shop" value="car" />
+    <key key="service" value="parts" />
+  </item>
+
 </group>
+
 </presets>
