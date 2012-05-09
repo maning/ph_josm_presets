@@ -10,11 +10,11 @@
 <!--
 
 -->
-
-  <item name="Vulcanizing">
+<group name="PH shops">
+  <item name="Vulcanizing" type="node,way">
     <label text="Vulcanizing shops" />
     <text key="name" text="(e.g. M3)" />
     <combo key="shop" text="Type" values="vulcanizing,car_repair" />
   </item>
-
+</group>
 </presets>
