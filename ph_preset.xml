@@ -3,9 +3,8 @@
   author="Maning Sambale"
   version="0.1"
   shortdescription="PH Presets"
-  de.shortdescription="Philippine Tagging Presets"
   link="http://wiki.openstreetmap.org/wiki/WikiProject_Philippines/Mapping_conventions"
-  description="Tags for the Philippines"
+  description="Tag Presets for the Philippines"
 >
 
 <!--
@@ -112,7 +111,9 @@ the tags of an OSM object fit into this preset.
 Note that for a match, at least one positive and no negative is required.
 -->
 
-<group name="PH Auto/Transport Services">
+<group name="Ph Presets">
+
+<group name="Auto/Transport Services">
 
   <item name="Vulcanizing" type="node,way">
     <label text="Vulcanizing shops" />
@@ -151,14 +152,16 @@ Note that for a match, at least one positive and no negative is required.
 <group name="PH Places">
 
 <item name="Place" type="node,way">
-    <label text="Location of settlements, including city, town (municipality), village (barangay), hamlets (gated subdivisions). Do not add the word Barangay in the name tag, i. e.: name=Matandang Balara, not name=Barangay Matandang Balara" />
-    <text key="name" text="Name (e.g. Baguio City)" />
-    <combo key="shop" text="shop" values="city, town, village, hamlet" />
+    <label text="Location of settlements. Note: do not add the word Barangay in the name tag, i. e.: name=Matandang Balara, not name=Barangay Matandang Balara" />
+    <text key="name" text="Name (e.g. Manila)" />
+    <combo key="place" text="place" values="city,town,village,hamlet" short_descriptions="Cities,Towns/Municipalities,Barangay,Gated subdivisions"/> 
 </item>
 
 </group>
 
 <group name="Others">
+
+</group>
 
 </group>
 
