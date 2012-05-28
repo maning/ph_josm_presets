@@ -437,6 +437,7 @@ Note that for a match, at least one positive and no negative is required.
         </item>
         <separator/>
       </group>
+</group>
 
 <group name="Auto/Transport Services">
 
@@ -459,7 +460,7 @@ Note that for a match, at least one positive and no negative is required.
     <key key="service" value="parts" />
   </item>
 </group>
-</group>
+
 
 
 <group name="Money">
