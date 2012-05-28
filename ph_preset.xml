@@ -436,6 +436,7 @@ Note that for a match, at least one positive and no negative is required.
             </optional>
         </item>
         <separator/>
+      </group>
 
 <group name="Auto/Transport Services">
 
