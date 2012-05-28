@@ -113,6 +113,330 @@ Note that for a match, at least one positive and no negative is required.
 
 <group name="Ph Presets">
 
+  <group name="Highways" icon="presets/way_secondary.png">
+    <group name="Streets" icon="presets/way_secondary.png">
+        <item name="Motorway" icon="presets/motorway.png" type="way" short_descriptions="Expressways. Northern Luzon Expressway, South Super Highway">
+            <link href="http://wiki.openstreetmap.org/wiki/Philippines/Mapping_conventions#Roads"/>
+            <label text="Edit Motorway" />
+            <space />
+            <key key="highway" value="motorway" />
+            <text key="ref" text="Reference" />
+            <optional>
+                <text key="name" text="Name" />
+                <combo key="designation" text="Designation" values="national,provincial,municipal,barangay" />
+                <combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" />
+                <combo key="lanes" text="Lanes" values="1,2,3,4,5" default="2" />
+                <text key="maxspeed" text="Max. speed (km/h)" />
+                <check key="oneway" text="Oneway" default="on" />
+                <check key="bridge" text="Bridge" default="off" />
+                <check key="tunnel" text="Tunnel" default="off" />
+                <check key="cutting" text="Cutting" default="off" />
+                <check key="embankment" text="Embankment" default="off" />
+                <check key="lit" text="Lit" default="off" /> 
+            </optional>
+        </item>
+        <item name="Motorway Link" icon="presets/motorway.png" type="way" short_descriptions="">
+            <link href="http://wiki.openstreetmap.org/wiki/Philippines/Mapping_conventions#Roads"/>
+            <label text="Edit Motorway Link" />
+            <space />
+            <key key="highway" value="motorway_link" />
+            <optional>
+                <combo key="designation" text="Designation" values="national,provincial,municipal,barangay" />
+                <combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" />
+                <combo key="lanes" text="Lanes" values="1,2,3,4,5" default="2" />
+                <text key="maxspeed" text="Max. speed (km/h)" />
+                <check key="oneway" text="Oneway" default="on" />
+                <check key="bridge" text="Bridge" default="off" />
+                <check key="tunnel" text="Tunnel" default="off" />
+                <check key="cutting" text="Cutting" default="off" />
+                <check key="embankment" text="Embankment" default="off" />
+                <check key="lit" text="Lit" default="off" /> 
+            </optional>
+        </item>
+        <item name="Trunk" icon="presets/trunk.png" type="way" short_descriptions="Separated roadways with exit ramps but not part of the interstate system. National Roads (for example the McArthur Highway and The National Highway down Laguna de Bay). Other very major urban arterial roads, e.g. EDSA, Roxas Boulevard, C-5 ">
+            <link href="http://wiki.openstreetmap.org/wiki/Philippines/Mapping_conventions#Roads"/>
+            <label text="Edit Trunk" />
+            <space />
+            <key key="highway" value="trunk" />
+            <text key="ref" text="Reference" />
+            <optional>
+                <text key="name" text="Name" />
+                <combo key="designation" text="Designation" values="national,provincial,municipal,barangay" />
+                <combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" />
+                <combo key="lanes" text="Lanes" values="1,2,3,4,5" default="2" />
+                <text key="maxspeed" text="Max. speed (km/h)" />
+                <check key="oneway" text="Oneway" default="on" />
+                <check key="motorroad" text="Motorroad" default="on" />
+                <check key="bridge" text="Bridge" default="off" />
+                <check key="tunnel" text="Tunnel" default="off" />
+                <check key="cutting" text="Cutting" default="off" />
+                <check key="embankment" text="Embankment" default="off" />
+                <check key="lit" text="Lit" default="off" /> 
+            </optional>
+        </item>
+        <item name="Trunk Link" icon="presets/trunk.png" type="way">
+            <link href="http://wiki.openstreetmap.org/wiki/Philippines/Mapping_conventions#Roads"/>
+            <label text="Edit Trunk Link" />
+            <space />
+            <key key="highway" value="trunk_link" />
+            <text key="ref" text="Reference" />
+            <optional>
+                <combo key="designation" text="Designation" values="national,provincial,municipal,barangay" />
+                <combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" />
+                <combo key="lanes" text="Lanes" values="1,2,3,4,5" default="1" />
+                <text key="maxspeed" text="Max. speed (km/h)" />
+                <check key="oneway" text="Oneway" default="on" />
+                <check key="motorroad" text="Motorroad" default="on" />
+                <check key="bridge" text="Bridge" default="off" />
+                <check key="tunnel" text="Tunnel" default="off" />
+                <check key="cutting" text="Cutting" default="off" />
+                <check key="embankment" text="Embankment" default="off" />
+                <check key="lit" text="Lit" default="off" /> 
+            </optional>
+        </item>
+        <separator/>
+        <item name="Primary" icon="presets/way_primary.png" type="way" short_descriptions="Other main roads in cities (e.g. Pasay Road, Buendia) and between towns.">
+            <link href="http://wiki.openstreetmap.org/wiki/Philippines/Mapping_conventions#Roads"/>
+            <label text="Edit Primary Road" />
+            <space />
+            <key key="highway" value="primary" />
+            <text key="ref" text="Reference" />
+            <optional>
+                <text key="name" text="Name" />
+                <combo key="designation" text="Designation" values="national,provincial,municipal,barangay" />
+                <combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" />
+                <combo key="lanes" text="Lanes" values="1,2,3,4,5" />
+                <text key="maxspeed" text="Max. speed (km/h)" />
+                <check key="oneway" text="Oneway" default="off" />
+                <check key="motorroad" text="Motorroad" default="off" />
+                <check key="bridge" text="Bridge" default="off" />
+                <check key="tunnel" text="Tunnel" default="off" />
+                <check key="cutting" text="Cutting" default="off" />
+                <check key="embankment" text="Embankment" default="off" />
+                <check key="lit" text="Lit" default="off" /> 
+            </optional>
+        </item>
+        <item name="Primary Link" icon="presets/way_primary.png" type="way">
+            <link href="http://wiki.openstreetmap.org/wiki/Link_(highway)"/>
+            <label text="Edit Primary Link" />
+            <space />
+            <key key="highway" value="primary_link" />
+            <optional>
+                <combo key="designation" text="Designation" values="national,provincial,municipal,barangay" />
+                <combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" />
+                <combo key="lanes" text="Lanes" values="1,2,3,4,5" />
+                <text key="maxspeed" text="Max. speed (km/h)" />
+                <check key="oneway" text="Oneway" default="off" />
+                <check key="motorroad" text="Motorroad" default="off" />
+                <check key="bridge" text="Bridge" default="off" />
+                <check key="tunnel" text="Tunnel" default="off" />
+                <check key="cutting" text="Cutting" default="off" />
+                <check key="embankment" text="Embankment" default="off" />
+                <check key="lit" text="Lit" default="off" /> 
+            </optional>
+        </item>
+        <item name="Secondary" icon="presets/way_secondary.png" type="way" short_descriptions="Other major roads. Routes to get across a local area, for example the road you need to take to get into a Barangay.">
+            <link href="http://wiki.openstreetmap.org/wiki/Philippines/Mapping_conventions#Roads"/>
+            <label text="Edit Secondary Road" />
+            <space />
+            <key key="highway" value="secondary" />
+            <text key="ref" text="Reference" />
+            <optional>
+                <text key="name" text="Name" />
+                 <combo key="designation" text="Designation" values="national,provincial,municipal,barangay" />
+               <combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" />
+                <combo key="lanes" text="Lanes" values="1,2,3,4,5" />
+                <text key="maxspeed" text="Max. speed (km/h)" />
+                <check key="oneway" text="Oneway" default="off" />
+                <check key="bridge" text="Bridge" default="off" />
+                <check key="tunnel" text="Tunnel" default="off" />
+                <check key="cutting" text="Cutting" default="off" />
+                <check key="embankment" text="Embankment" default="off" />
+                <check key="lit" text="Lit" default="off" /> 
+            </optional>
+        </item>
+        <item name="Tertiary" icon="presets/way_tertiary.png" type="way" short_descriptions="A central street within, or crossing through the barangay, with substantial traffic.">
+            <link href="http://wiki.openstreetmap.org/wiki/Philippines/Mapping_conventions#Roads"/>
+            <label text="Edit Tertiary Road" />
+            <space />
+            <key key="highway" value="tertiary" />
+            <text key="ref" text="Reference" />
+            <optional>
+                <text key="name" text="Name" />
+                <combo key="designation" text="Designation" values="national,provincial,municipal,barangay" />
+                <combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" />
+                <combo key="lanes" text="Lanes" values="1,2,3,4,5" />
+                <text key="maxspeed" text="Max. speed (km/h)" />
+                <check key="oneway" text="Oneway" default="off" />
+                <check key="bridge" text="Bridge" default="off" />
+                <check key="tunnel" text="Tunnel" default="off" />
+                <check key="cutting" text="Cutting" default="off" />
+                <check key="embankment" text="Embankment" default="off" />
+                <check key="lit" text="Lit" default="off" /> 
+            </optional>
+        </item>
+        <item name="Unclassified" icon="presets/way_unclassified.png" type="way" short_descriptions="Unnamed roads or everything else.">
+            <link href="http://wiki.openstreetmap.org/wiki/Philippines/Mapping_conventions#Roads"/>
+            <label text="Edit Unclassified Road" />
+            <space />
+            <key key="highway" value="unclassified" />
+            <optional>
+                <text key="name" text="Name" />
+                <combo key="designation" text="Designation" values="national,provincial,municipal,barangay" />
+                <check key="oneway" text="Oneway" default="off" />
+                <check key="bridge" text="Bridge" default="off" />
+                <check key="tunnel" text="Tunnel" default="off" />
+                <check key="cutting" text="Cutting" default="off" />
+                <check key="embankment" text="Embankment" default="off" />
+                <check key="lit" text="Lit" default="off" /> 
+                <check key="passing_places" text="Passing Places" default="off" />
+                <combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" />
+                <combo key="lanes" text="Lanes" values="1,2,3,4,5" />
+                <text key="maxspeed" text="Max. speed (km/h)" />
+                <combo key="surface" text="Surface" values="paved,unpaved,asphalt,concrete,metal,wood,paving_stones,cobblestone,gravel,pebblestone,compacted,grass_paver,grass,sand,ground" />
+                <text key="width" text="Width (meters)" />
+            </optional>
+        </item>
+        <item name="Residential" icon="presets/residential.png" type="way" short_descriptions="Roads accessing or around residential areas. All other streets with mostly houses, particularly inside barangays.">
+            <link href="http://wiki.openstreetmap.org/wiki/Philippines/Mapping_conventions#Roads"/>
+            <label text="Edit Residential Street" />
+            <space />
+            <key key="highway" value="residential" />
+            <text key="name" text="Name" />
+            <optional>
+                <combo key="designation" text="Designation" values="national,provincial,municipal,barangay" />
+                <check key="oneway" text="Oneway" default="off" />
+                <check key="bridge" text="Bridge" default="off" />
+                <check key="tunnel" text="Tunnel" default="off" />
+                <check key="cutting" text="Cutting" default="off" />
+                <check key="embankment" text="Embankment" default="off" />
+                <check key="lit" text="Lit" default="off" /> 
+                <combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" />
+                <combo key="lanes" text="Lanes" values="1,2,3,4,5" />
+                <text key="maxspeed" text="Max. speed (km/h)" />
+                <combo key="surface" text="Surface" values="paved,unpaved,asphalt,concrete,metal,wood,paving_stones,cobblestone,gravel,pebblestone,compacted,grass_paver,grass,sand,ground" />
+                <text key="width" text="Width (meters)" />
+
+            </optional>
+        </item>
+        <item name="Living Street" icon="presets/living_street.png" type="way" short_descriptions="">
+            <link href="http://wiki.openstreetmap.org/wiki/Philippines/Mapping_conventions#Roads"/>
+            <label text="Edit Living Street" />
+            <space />
+            <key key="highway" value="living_street" />
+            <text key="name" text="Name" />
+            <optional>
+                <combo key="designation" text="Designation" values="national,provincial,municipal,barangay" />   
+                <check key="oneway" text="Oneway" default="off" />
+                <check key="bridge" text="Bridge" default="off" />
+                <check key="tunnel" text="Tunnel" default="off" />
+                <check key="cutting" text="Cutting" default="off" />
+                <check key="embankment" text="Embankment" default="off" />
+                <check key="lit" text="Lit" default="off" /> 
+                <combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" />
+                <combo key="surface" text="Surface" values="paved,unpaved,asphalt,concrete,metal,wood,paving_stones,cobblestone,gravel,pebblestone,compacted,grass_paver,grass,sand,ground" />
+                <text key="width" text="Width (meters)" />
+            </optional>
+        </item>
+        <item name="Pedestrian" icon="presets/pedestrian.png" type="way,closedway,relation" short_descriptions="">
+            <link href="http://wiki.openstreetmap.org/wiki/Philippines/Mapping_conventions#Roads"/>
+            <label text="Edit Pedestrian Street" />
+            <space />
+            <key key="highway" value="pedestrian" />
+            <text key="name" text="Name" />
+            <optional>
+                <combo key="designation" text="Designation" values="national,provincial,municipal,barangay" />
+                <check key="oneway" text="Oneway" default="off" />
+                <check key="bridge" text="Bridge" default="off" />
+                <check key="tunnel" text="Tunnel" default="off" />
+                <check key="cutting" text="Cutting" default="off" />
+                <check key="embankment" text="Embankment" default="off" />
+                <check key="lit" text="Lit" default="off" /> 
+                <combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" />
+                <combo key="surface" text="Surface" values="paved,unpaved,asphalt,concrete,metal,wood,paving_stones,cobblestone,gravel,pebblestone,compacted,grass_paver,grass,sand,ground" />
+                <text key="width" text="Width (meters)" />
+
+            </optional>
+        </item>
+        <item name="Service" icon="presets/way_unclassified.png" type="way" short_descriptions="Roads found in cemeteries, parking lots, and alleyways.">
+            <link href="http://wiki.openstreetmap.org/wiki/Philippines/Mapping_conventions#Roads"/>
+            <label text="Edit Serviceway" />
+            <space />
+            <key key="highway" value="service" />
+            <optional>
+                <combo key="service" text="Serviceway type" values="alley,driveway,parking_aisle" />
+                <text key="name" text="Name" />
+                <check key="oneway" text="Oneway" default="off" />
+                <check key="bridge" text="Bridge" default="off" />
+                <check key="tunnel" text="Tunnel" default="off" />
+                <check key="cutting" text="Cutting" default="off" />
+                <check key="embankment" text="Embankment" default="off" />
+                <check key="lit" text="Lit" default="off" /> 
+                <check key="passing_places" text="Passing Places" default="off" />
+                <combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" />
+                <combo key="surface" text="Surface" values="paved,unpaved,asphalt,concrete,metal,wood,paving_stones,cobblestone,gravel,pebblestone,compacted,grass_paver,grass,sand,ground" />
+                <text key="maxspeed" text="Max. speed (km/h)" />
+                <text key="width" text="Width (meters)" />
+ 
+            </optional>
+        </item>
+        <item name="Parking Aisle" icon="presets/way_unclassified.png" type="way">
+            <link href="http://wiki.openstreetmap.org/wiki/Philippines/Mapping_conventions#Roads"/>
+            <label text="Edit Parking Aisle" />
+            <space />
+            <key key="highway" value="service" />
+            <key key="service" value="parking_aisle" />
+            <optional>
+                <check key="oneway" text="Oneway" default="off" />
+                <combo key="surface" text="Surface" values="paved,unpaved,asphalt,concrete,metal,wood,paving_stones,cobblestone,gravel,pebblestone,compacted,grass_paver,grass,sand,ground" />
+                <check key="lit" text="Lit" default="off" /> 
+            </optional>
+        </item>
+        <item name="Road (Unknown Type)" icon="presets/way_unclassified.png" type="way" short_descriptions="">
+            <link href="http://wiki.openstreetmap.org/wiki/Philippines/Mapping_conventions#Roads"/>
+            <label text="Edit Road of unknown type" />
+            <space />
+            <key key="highway" value="road" />
+            <optional>
+                <text key="name" text="Name" />
+                <combo key="designation" text="Designation" values="national,provincial,municipal,barangay" />
+                <check key="oneway" text="Oneway" default="off" />
+                <check key="bridge" text="Bridge" default="off" />
+                <check key="tunnel" text="Tunnel" default="off" />
+                <check key="cutting" text="Cutting" default="off" />
+                <check key="embankment" text="Embankment" default="off" />
+                <check key="lit" text="Lit" default="off" /> 
+                <combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" />
+                <combo key="surface" text="Surface" values="paved,unpaved,asphalt,concrete,metal,wood,paving_stones,cobblestone,gravel,pebblestone,compacted,grass_paver,grass,sand,ground" />
+                <text key="maxspeed" text="Max. speed (km/h)" />
+                <text key="width" text="Width (meters)" />
+
+            </optional>
+        </item>
+        <item name="Construction" icon="presets/construction.png" type="way">
+            <label text="Edit Highway Under Construction" />
+            <link href="http://wiki.openstreetmap.org/wiki/Philippines/Mapping_conventions#Roads"/>
+            <space />
+            <key key="highway" value="construction" />
+            <optional>
+                <text key="name" text="Name" />
+                <combo key="designation" text="Designation" values="national,provincial,municipal,barangay" />
+                <check key="oneway" text="Oneway" default="off" />
+                <check key="bridge" text="Bridge" default="off" />
+                <check key="tunnel" text="Tunnel" default="off" />
+                <check key="cutting" text="Cutting" default="off" />
+                <check key="embankment" text="Embankment" default="off" />
+                <check key="lit" text="Lit" default="off" /> 
+                <combo key="layer" text="Layer" values="5,4,3,2,1,0,-1,-2,-3,-4,-5" />
+                <combo key="surface" text="Surface" values="paved,unpaved,asphalt,concrete,metal,wood,paving_stones,cobblestone,gravel,pebblestone,compacted,grass_paver,grass,sand,ground" />
+                <combo key="junction" text="Junction" values="roundabout,jughandle,yes" />
+                <text key="maxspeed" text="Max. speed (km/h)" />
+                <text key="width" text="Width (meters)" />
+
+            </optional>
+        </item>
+        <separator/>
+
 <group name="Auto/Transport Services">
 
   <item name="Vulcanizing" type="node,way">
@@ -149,12 +473,16 @@ Note that for a match, at least one positive and no negative is required.
 
 </group>
 
-<group name="PH Places">
+<group name="Places">
 
 <item name="Place" type="node,way">
     <label text="Location of settlements. Note: do not add the word Barangay in the name tag, i. e.: name=Matandang Balara, not name=Barangay Matandang Balara" />
     <text key="name" text="Name (e.g. Manila)" />
-    <combo key="place" text="place" values="city,town,village,hamlet" short_descriptions="Cities,Towns/Municipalities,Barangay,Gated subdivisions"/> 
+    <combo key="place" text="place" values="city,town,village,hamlet" display_values="city,municipality,barangay,subdivision" short_descriptions="Cities,Towns/Municipalities,Barangay,Gated subdivisions"/> 
+</item>
+
+<item name="Admin Boundaries" type="closedway,relation">
+
 </item>
 
 </group>
