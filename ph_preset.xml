@@ -117,7 +117,7 @@ Note that for a match, at least one positive and no negative is required.
     <group name="Streets" icon="presets/way_secondary.png">
         <item name="Motorway" icon="presets/motorway.png" type="way" short_descriptions="Expressways. Northern Luzon Expressway, South Super Highway">
             <link href="http://wiki.openstreetmap.org/wiki/Philippines/Mapping_conventions#Roads"/>
-            <label text="Edit Motorway" />
+            <label text="Edit Motorway. (Expressways. Northern Luzon Expressway, South Super Highway)" />
             <space />
             <key key="highway" value="motorway" />
             <text key="ref" text="Reference" />
@@ -155,7 +155,7 @@ Note that for a match, at least one positive and no negative is required.
         </item>
         <item name="Trunk" icon="presets/trunk.png" type="way" short_descriptions="Separated roadways with exit ramps but not part of the interstate system. National Roads (for example the McArthur Highway and The National Highway down Laguna de Bay). Other very major urban arterial roads, e.g. EDSA, Roxas Boulevard, C-5 ">
             <link href="http://wiki.openstreetmap.org/wiki/Philippines/Mapping_conventions#Roads"/>
-            <label text="Edit Trunk" />
+            <label text="Edit Trunk. Separated roadways with exit ramps but not part of motorways. National Roads (i.e. McArthur Highway) and other very major urban arterial roads, e.g. EDSA, Roxas Boulevard, C-5" />
             <space />
             <key key="highway" value="trunk" />
             <text key="ref" text="Reference" />
@@ -197,7 +197,7 @@ Note that for a match, at least one positive and no negative is required.
         <separator/>
         <item name="Primary" icon="presets/way_primary.png" type="way" short_descriptions="Other main roads in cities (e.g. Pasay Road, Buendia) and between towns.">
             <link href="http://wiki.openstreetmap.org/wiki/Philippines/Mapping_conventions#Roads"/>
-            <label text="Edit Primary Road" />
+            <label text="Edit Primary Road.  Other main roads in cities (e.g. Pasay Road, Buendia) and between towns." />
             <space />
             <key key="highway" value="primary" />
             <text key="ref" text="Reference" />
@@ -237,7 +237,7 @@ Note that for a match, at least one positive and no negative is required.
         </item>
         <item name="Secondary" icon="presets/way_secondary.png" type="way" short_descriptions="Other major roads. Routes to get across a local area, for example the road you need to take to get into a Barangay.">
             <link href="http://wiki.openstreetmap.org/wiki/Philippines/Mapping_conventions#Roads"/>
-            <label text="Edit Secondary Road" />
+            <label text="Edit Secondary Road. Routes to get across a local area, for example the road you need to take to get into a Barangay."  />
             <space />
             <key key="highway" value="secondary" />
             <text key="ref" text="Reference" />
@@ -257,7 +257,7 @@ Note that for a match, at least one positive and no negative is required.
         </item>
         <item name="Tertiary" icon="presets/way_tertiary.png" type="way" short_descriptions="A central street within, or crossing through the barangay, with substantial traffic.">
             <link href="http://wiki.openstreetmap.org/wiki/Philippines/Mapping_conventions#Roads"/>
-            <label text="Edit Tertiary Road" />
+            <label text="Edit Tertiary Road.  A central street within, or crossing through the barangay, with substantial traffic." />
             <space />
             <key key="highway" value="tertiary" />
             <text key="ref" text="Reference" />
@@ -277,7 +277,7 @@ Note that for a match, at least one positive and no negative is required.
         </item>
         <item name="Unclassified" icon="presets/way_unclassified.png" type="way" short_descriptions="Unnamed roads or everything else.">
             <link href="http://wiki.openstreetmap.org/wiki/Philippines/Mapping_conventions#Roads"/>
-            <label text="Edit Unclassified Road" />
+            <label text="Edit Unclassified Road.  Unnamed roads or everything else." />
             <space />
             <key key="highway" value="unclassified" />
             <optional>
@@ -299,7 +299,7 @@ Note that for a match, at least one positive and no negative is required.
         </item>
         <item name="Residential" icon="presets/residential.png" type="way" short_descriptions="Roads accessing or around residential areas. All other streets with mostly houses, particularly inside barangays.">
             <link href="http://wiki.openstreetmap.org/wiki/Philippines/Mapping_conventions#Roads"/>
-            <label text="Edit Residential Street" />
+            <label text="Edit Residential Street. Roads accessing or around residential areas. All other streets with mostly houses, particularly inside barangays."/>
             <space />
             <key key="highway" value="residential" />
             <text key="name" text="Name" />
@@ -360,7 +360,7 @@ Note that for a match, at least one positive and no negative is required.
         </item>
         <item name="Service" icon="presets/way_unclassified.png" type="way" short_descriptions="Roads found in cemeteries, parking lots, and alleyways.">
             <link href="http://wiki.openstreetmap.org/wiki/Philippines/Mapping_conventions#Roads"/>
-            <label text="Edit Serviceway" />
+            <label text="Edit Serviceway.  Roads found in cemeteries, parking lots, and alleyways." />
             <space />
             <key key="highway" value="service" />
             <optional>
